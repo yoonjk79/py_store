@@ -5,11 +5,12 @@ import { runPython } from './skulpt-runner';
 import './App.css';
 
 // 1. 프롤로그 데이터 추가
+const baseUrl = import.meta.env.BASE_URL;
 const prologueData = [
-  { id: 1, image: "/images/prologue_1.png", text: "🎉 당신은 오늘부터 스마트 스토어의 사장님이 되었습니다!" },
-  { id: 2, image: "/images/prologue_2.png", text: "첫 상품을 등록하려는데... 어? 파이썬 코드로 해야 한다구요?" },
-  { id: 3, image: "/images/prologue_3.png", text: "걱정 마세요! AI 매니저 '파이'와 함께라면 어렵지 않아요." },
-  { id: 4, image: "/images/prologue_4.png", text: "자, 이제 나만의 스마트 스토어를 멋지게 꾸며볼까요?" }
+  { id: 1, image: `${baseUrl}images/prologue_1.png`, text: "🎉 당신은 오늘부터 스마트 스토어의 사장님이 되었습니다!" },
+  { id: 2, image: `${baseUrl}images/prologue_2.png`, text: "첫 상품을 등록하려는데... 어? 파이썬 코드로 해야 한다구요?" },
+  { id: 3, image: `${baseUrl}images/prologue_3.png`, text: "걱정 마세요! AI 매니저 '파이'와 함께라면 어렵지 않아요." },
+  { id: 4, image: `${baseUrl}images/prologue_4.png`, text: "자, 이제 나만의 스마트 스토어를 멋지게 꾸며볼까요?" }
 ];
 
 // 진열대 상품 컴포넌트
